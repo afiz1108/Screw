@@ -90,10 +90,10 @@ Setgroup =""" Private Menu 􀔃􀄆red check mark􏿿
 [Invite mid] = Invite via mid
 [inv: (gid)] = Invite admin ke group id yang dituju
 [Kick mid] = Kick via mid
-[Ard Squad join] = Invite semua bot
+[Fiz Squad join] = Invite semua bot
 [Bye bots] = Mengeluarkan semua bots assist
-[Bye Ard] = Mengeluarkan bot utama
-[Ard out] = Mengeluarkan bot utama dari semua grup
+[Bye Fiz] = Mengeluarkan bot utama
+[Fiz out] = Mengeluarkan bot utama dari semua grup
 [Bc ...] = Untuk broadcast ke semua grup
 [Kernel] = Melihat kernel bot"""
 KAC=[cl,ki,kk,kc]
@@ -104,8 +104,8 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid,"YOUR_MID"]
-admin=["YOUR_MID"]
-admsa=["YOUR_MID"]
+admin=["u29b7d9118645af64909adba01fe4cb26","uce3da099084fce160f290468d1183283"]
+admsa=["u29b7d9118645af64909adba01fe4cb26","uce3da099084fce160f290468d1183283"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -113,7 +113,7 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"Thanks for adding me\nFollow my instagram; instagram.com/fajrinard",
+    'message':"Thanks for adding me,Script created by fajrinard.Edited by Fiz",
     "lang":"JP",
     "comment":"Thanks for add me",
     "commentOn":True,
@@ -121,10 +121,10 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"Ard",
-    "cName2":"Ard 1",
-    "cName3":"Ard 2",
-    "cName4":"Ard 3",
+    "cName":"Fiz",
+    "cName2":"Fiz 1",
+    "cName3":"Fiz 2",
+    "cName4":"Fiz 3",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -679,8 +679,8 @@ def bot(op):
                 kc.sendMessage(msg)
             elif msg.text in ["Creator","creator"]:
                 msg.contentType = 13
-                cl.sendText(msg.to, "Created By: FajrinArd")
-                msg.contentMetadata = {'mid': 'ue11fc7860247c63bd3da149613a793f6'}
+                cl.sendText(msg.to, "Created By: AFiZ")
+                msg.contentMetadata = {'mid': 'u29b7d9118645af64909adba01fe4cb26'}
                 cl.sendMessage(msg)
             elif msg.text in ["Me"]:
                 msg.contentType = 13
@@ -1112,7 +1112,7 @@ def bot(op):
 
 #-----------------------------------------------
          #----------------Fungsi Join Group Start-----------------------#
-            elif msg.text in ["Ard Squad join"]:
+            elif msg.text in ["Fiz Squad join"]:
               if msg.from_ in admin:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
@@ -1133,7 +1133,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         cl.updateGroup(G)
 
-            elif msg.text in ["Ard join"]:
+            elif msg.text in ["Fiz join"]:
               if msg.form_ in admin:
                   x = ki.getGroup(msg.to)
                   x.preventJoinByTicket = False
@@ -1146,7 +1146,7 @@ def bot(op):
                   ki.updateGroup(G)
                   Ticket = ki.reissueGroupTicket(msg.to)
 
-            elif msg.text in ["Ard1 join"]:
+            elif msg.text in ["Fiz1 join"]:
               if msg.from_ in admin:
                   x = cl.getGroup(msg.to)
                   x.preventJoinByTicket = False
@@ -1159,7 +1159,7 @@ def bot(op):
                   cl.updateGroup(G)
                   Ticket = cl.reissueGroupTicket(msg.to)
 
-            elif msg.text in ["Ard2 join"]:
+            elif msg.text in ["Fiz2 join"]:
               if msg.from_ in admin:
                   x = cl.getGroup(msg.to)
                   x.preventJoinByTicket = False
@@ -1172,7 +1172,7 @@ def bot(op):
                   cl.updateGroup(G)
                   Ticket = cl.reissueGroupTicket(msg.to)
                   
-            elif msg.text in ["Ard3 join"]:
+            elif msg.text in ["Fiz3 join"]:
               if msg.from_ in admin:
                   X = cl.getGroup(msg.to)
                   X.preventJoinByTicket = False
@@ -1197,7 +1197,7 @@ def bot(op):
                         kc.leaveGroup(msg.to)
                     except:
                         pass
-            elif msg.text in ["Bye Ard"]:
+            elif msg.text in ["Bye Fiz"]:
               if msg.from_ in admin:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
