@@ -35,7 +35,7 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" - Ard Squad bot -
+helpMessage =""" - Fiz Squad bot -
 
 General command :
 Me  =  Cek akun sendiri
