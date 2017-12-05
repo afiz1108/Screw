@@ -399,7 +399,7 @@ def bot(op):
         if op.type == 17:
             group = cl.getGroup(op.param1)
             cb = Message()
-            cb.to = op.param1
+            cb.to = op.prm1
             cb.text = "Hi " + cl.getContact(op.param2).displayName + ", welcome to " + group.name
             cl.sendMessage(cb)
 
