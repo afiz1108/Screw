@@ -1428,7 +1428,7 @@ def bot(op):
 
 #-----------------------------------------------
 
-            elif msg.text in ["Ard","ard"]:
+            elif msg.text in ["Fiz","fiz"]:
                 cl.sendText(msg.to,"Ya? Type 'help' for help message.")
 #-----------------------------------------------
 
@@ -1521,7 +1521,7 @@ def bot(op):
                     except:
                         pass
 
-            elif msg.text.lower() == 'ard out all':
+            elif msg.text.lower() == 'Fiz out all':
 			  if msg.from_ in admsa:
 				gid = cl.getGroupIdsJoined()
 				gid = ki.getGroupIdsJoined()
@@ -1533,16 +1533,16 @@ def bot(op):
 					kk.leaveGroup(i)
 					kc.leaveGroup(i)
 				if wait["lang"] == "JP":
-					cl.sendText(msg.to,"Ard Squad bot leaving all groups.")
+					cl.sendText(msg.to,"Fiz Squad bot leaving all groups.")
 				else:
 					cl.sendText(msg.to,"He declined all invitations")
-            elif msg.text.lower() == 'ard out':
+            elif msg.text.lower() == 'Fiz out':
 			  if msg.from_ in admsa:
 				gid = cl.getGroupIdsJoined()
 				for i in gid:
 					cl.leaveGroup(i)
 				if wait["lang"] == "JP":
-					cl.sendText(msg.to,"Ard bot leaving all groups.")
+					cl.sendText(msg.to,"Fiz bot leaving all groups.")
 				else:
 					cl.sendText(msg.to,"He declined all invitations")
 
