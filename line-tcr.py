@@ -1444,7 +1444,7 @@ def bot(op):
       #-------------Fungsi Balesan Respon Finish---------------------#
 
        #-------------Fungsi Speedbot Start---------------------#
-            elif msg.text in ["Speedbot","speedbot"]:
+            elif msg.text in ["Speedbot","speedbot","Speed"]:
                 start = time.time()
                 cl.sendText(msg.to, "please wait...")
                 elapsed_time = time.time() - start
@@ -1521,7 +1521,7 @@ def bot(op):
                     except:
                         pass
 
-            elif msg.text.lower() == 'Fiz out all':
+            elif msg.text.lower() == 'nOpe out all':
 			  if msg.from_ in admsa:
 				gid = cl.getGroupIdsJoined()
 				gid = ki.getGroupIdsJoined()
@@ -1536,7 +1536,7 @@ def bot(op):
 					cl.sendText(msg.to,"Fiz Squad bot leaving all groups.")
 				else:
 					cl.sendText(msg.to,"He declined all invitations")
-            elif msg.text.lower() == 'Fiz out':
+            elif msg.text.lower() == 'NoPe out':
 			  if msg.from_ in admsa:
 				gid = cl.getGroupIdsJoined()
 				for i in gid:
